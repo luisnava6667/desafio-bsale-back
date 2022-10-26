@@ -7,7 +7,7 @@
 
 ## Deploy
 
-El despliegue del api rest se hizo en [Heroku](https://www.heroku.com/)
+El despliegue del api rest se hizo en un servidor propio (self-host)
 > Nota: Los accesos directos al api rest se encuentran en el apartado **Endpoints** 👇
 
 ## Estructura de carpetas
@@ -35,7 +35,7 @@ src
 
 | Route | Type | Input | Query |
 | - | - | - | - |
-| [/category/all](https://desafio-bsale-back.herokuapp.com/category/all) | `GET` | void | SELECT * FROM category; |
-| [/product/all](https://desafio-bsale-back.herokuapp.com/product/all) | `GET` | void | SELECT * FROM product; |
-| [/product/name/:name](https://desafio-bsale-back.herokuapp.com/product/name/ron) | `GET` | name: string | SELECT * FROM product WHERE name LIKE '%name%'; |
-| [/product/category/:idCategory](https://desafio-bsale-back.herokuapp.com/product/category/1) | `GET` | idCategory: number | SELECT * FROM product WHERE category = 'idCategory' |
+| [/category/all](https://xoxo.my.to/category/all) | `GET` | void | SELECT * FROM category; |
+| [/product/all](https://xoxo.my.to/product/all) | `GET` | void | SELECT * FROM product; |
+| [/product/name/:name](https://xoxo.my.to/product/name/ron) | `GET` | name: string | SELECT * FROM product WHERE name LIKE '%name%'; |
+| [/product/category/:idCategory](https://xoxo.my.to/product/category/1) | `GET` | idCategory: number | SELECT * FROM product WHERE category = 'idCategory' |
